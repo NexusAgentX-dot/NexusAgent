@@ -3,7 +3,10 @@ dist/
 .env
 backend/.env
 data/
-output/
+output/testnet-flow/
+output/alpha-live/
+output/validation/
+output/playwright/
 .playwright-cli/
 *.log
 .DS_Store

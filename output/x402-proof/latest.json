@@ -1,0 +1,63 @@
+{
+  "capturedAt": "2026-03-27T06:47:16Z",
+  "flow": {
+    "step1_request": "GET /api/signals/premium-okb (no payment)",
+    "step1_response": 402,
+    "step1_body": {
+      "error": {
+        "code": "PAYMENT_REQUIRED",
+        "message": "This premium endpoint requires x402 payment.",
+        "paymentRequirements": [
+          {
+            "scheme": "exact",
+            "network": "x-layer-testnet",
+            "maxAmountRequired": "100000",
+            "payTo": "0x031189016E014447C467163D4A818D847359f980",
+            "asset": "0x9e29b3aada05bf2d2c827af80bd28dc0b9b4fb0c",
+            "resource": "/api/signals/premium-okb",
+            "description": "Pay 0.10 USDT for premium OKB market signal with risk analysis"
+          }
+        ],
+        "hint": "Include X-PAYMENT header with base64-encoded payment proof to access premium data."
+      }
+    },
+    "step2_request": "GET /api/signals/premium-okb + X-PAYMENT header",
+    "step2_paymentProof": {
+      "paid": true,
+      "txHash": "0x_evidence_capture_payment"
+    },
+    "step2_body": {
+      "signal": {
+        "provider": "okx_onchain_os",
+        "price": "85.51",
+        "change24h": "0.45",
+        "volume24h": "5268",
+        "approved": false,
+        "thresholdRule": "|24h_change| > 1% OR volume_24h > 5M USD; price > $1",
+        "signalSummary": "OKB at $85.51 (0.45% 24h, vol 5268) via Onchain OS Market API — threshold not met.",
+        "capturedAt": "2026-03-27T06:47:23.351Z",
+        "onchainOSMetadata": {
+          "marketCap": "36687590.690950854011581953",
+          "holders": "19526",
+          "liquidity": "114997.528744510876235821259557334115284",
+          "txs24h": "53",
+          "priceChange1h": "0",
+          "priceChange4h": "0"
+        }
+      },
+      "premium": {
+        "detailedAnalysis": "OKB trading at $85.51 with 0.45% 24h change. Market cap $36687591, 19526 holders, 53 txs/24h.",
+        "riskScore": "LOW",
+        "recommendation": "Stable conditions. Optimal window for bounded execution.",
+        "onchainOSEnriched": true
+      },
+      "x402": {
+        "status": "paid",
+        "paymentTxHash": "0x_evidence_capture_payment",
+        "settledOnChain": true
+      }
+    }
+  },
+  "protocol": "x402",
+  "description": "HTTP 402 payment flow with simplified verification"
+}

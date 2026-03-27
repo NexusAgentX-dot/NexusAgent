@@ -1,0 +1,176 @@
+{
+  "capturedAt": "2026-03-27T06:47:16Z",
+  "responses": {
+    "okb_signal": {
+      "signal": {
+        "provider": "okx_onchain_os",
+        "price": "85.51",
+        "change24h": "0.45",
+        "volume24h": "5268",
+        "approved": false,
+        "thresholdRule": "|24h_change| > 1% OR volume_24h > 5M USD; price > $1",
+        "signalSummary": "OKB at $85.51 (0.45% 24h, vol 5268) via Onchain OS Market API — threshold not met.",
+        "capturedAt": "2026-03-27T06:47:21.722Z",
+        "onchainOSMetadata": {
+          "marketCap": "36687590.690950854011581953",
+          "holders": "19526",
+          "liquidity": "114997.528744510876235821259557334115284",
+          "txs24h": "53",
+          "priceChange1h": "0",
+          "priceChange4h": "0"
+        }
+      }
+    },
+    "dex_quote": {
+      "quote": {
+        "available": false,
+        "provider": "okx_onchain_os_dex",
+        "chainIndex": "196",
+        "fromToken": "0x9e29b3aada05bf2d2c827af80bd28dc0b9b4fb0c",
+        "toToken": "0xe538905cf8410324e03a5a23c1c177a474d59b2b",
+        "fromAmount": "100000",
+        "estimatedOutput": "0",
+        "priceImpact": "0",
+        "routerDescription": "DEX quote failed: code=51001 msg=Token '0x9e29b3aada05bf2d2c827af80bd28dc0b9b4fb0c' not supported on 'X Layer'. Please verify the contract address and chain.",
+        "estimateGasFee": "0",
+        "capturedAt": "2026-03-27T06:47:22.237Z"
+      }
+    },
+    "wallet_status": {
+      "ready": true,
+      "address": "0x031189016E014447C467163D4A818D847359f980",
+      "chainIndex": "196",
+      "note": "Wallet reachable via Onchain OS Wallet API. Gas price: {\"normal\":\"156467969\",\"min\":\"141232925\",\"max\":\"200494191\",\"supportEip1559\":false,\"eip1559Protocol\":{},\"priorityFee\":{}}"
+    },
+    "integration_status": {
+      "onchainOS": {
+        "configured": true,
+        "services": [
+          "market",
+          "dex",
+          "wallet"
+        ]
+      },
+      "x402": {
+        "configured": true,
+        "premiumEndpoint": "/api/signals/premium-okb",
+        "paymentVerification": "simplified"
+      },
+      "agenticWallet": {
+        "signInfoAvailable": true,
+        "teeProtected": true,
+        "supportedChains": [
+          "196"
+        ]
+      },
+      "erc8004": {
+        "address": "0xc66DB3F3D07045686307674A261482d3e5EF9B79",
+        "deployed": true,
+        "integrated": true
+      },
+      "erc8183": {
+        "address": "0xB4dDf24c8a6cBDEB976d27C4A142f076272EfEC0",
+        "deployed": true,
+        "integrated": true,
+        "escrowLifecycleActive": true
+      },
+      "mcp": {
+        "available": true,
+        "tools": [
+          "get_okb_signal",
+          "get_dex_quote",
+          "check_settlement_proof",
+          "check_wallet_status",
+          "get_integration_status"
+        ]
+      },
+      "a2a": {
+        "agentCard": "/.well-known/agent.json"
+      },
+      "contractIntegration": true,
+      "signalProvider": "okx_market",
+      "executionMode": "testnet_transfer"
+    },
+    "agent_card": {
+      "name": "NexusAgent",
+      "version": "0.1.0",
+      "description": "Multi-agent commerce framework on X Layer. Fetches OKB market signals via OKX Onchain OS, makes autonomous execution decisions, and settles bounded stablecoin transfers on-chain.",
+      "url": "http://localhost:8787",
+      "capabilities": {
+        "streaming": false,
+        "pushNotifications": false
+      },
+      "defaultInputModes": [
+        "text/plain"
+      ],
+      "defaultOutputModes": [
+        "application/json"
+      ],
+      "protocolVersion": "0.3",
+      "skills": [
+        {
+          "id": "run_workflow",
+          "name": "Run Workflow",
+          "description": "Execute a multi-agent commerce workflow with OKB signal, decision, execution, and settlement on X Layer.",
+          "tags": [
+            "workflow",
+            "x-layer",
+            "stablecoin",
+            "onchain-os"
+          ]
+        },
+        {
+          "id": "get_market_signal",
+          "name": "OKB Market Signal",
+          "description": "Get live OKB market signal from OKX Onchain OS Market API.",
+          "tags": [
+            "market-signal",
+            "okb",
+            "onchain-os"
+          ]
+        },
+        {
+          "id": "check_proof",
+          "name": "Verify Settlement",
+          "description": "Verify a settlement proof transaction on X Layer via RPC receipt.",
+          "tags": [
+            "settlement",
+            "verification",
+            "x-layer"
+          ]
+        }
+      ],
+      "provider": {
+        "organization": "NexusAgent",
+        "url": "https://github.com/nexusagent"
+      },
+      "protocols": [
+        "A2A/0.3",
+        "x402",
+        "ERC-8004",
+        "ERC-8183"
+      ],
+      "integrations": {
+        "okxOnchainOS": {
+          "market": "/api/signals/okb",
+          "dex": "/api/integrations/dex-quote",
+          "status": "/api/integrations/status"
+        }
+      }
+    },
+    "health": {
+      "status": "ok",
+      "service": "nexusagent-backend",
+      "version": "0.1.0",
+      "integrations": {
+        "okxOnchainOS": true,
+        "x402": true,
+        "erc8004": "0xc66DB3F3D07045686307674A261482d3e5EF9B79",
+        "erc8183": "0xB4dDf24c8a6cBDEB976d27C4A142f076272EfEC0",
+        "xlayerTestnet": true,
+        "mcpServer": true
+      },
+      "timestamp": "2026-03-27T06:47:22.801Z"
+    }
+  }
+}
