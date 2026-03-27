@@ -71,7 +71,7 @@ In particular, the `Executor` and `Evaluator` split follows a simple evaluator-o
 |-------|-----------|--------|
 | **Market Signal** | OKX Onchain OS Market API (authenticated) | Live |
 | **DEX Routing** | OKX Onchain OS DEX Aggregator API | Live (quote-only) |
-| **Payment** | x402 protocol (HTTP 402 flow, on-chain USDT settlement) | Live |
+| **Payment** | x402 protocol (HTTP 402 flow, txHash-based verification) | Live endpoint |
 | **Settlement** | X Layer ERC-20 transfers (mainnet + testnet) | Live (mainnet) |
 | **Agent Identity** | ERC-8004 AgentRegistry on X Layer mainnet | Deployed + Integrated |
 | **Agent Commerce** | ERC-8183 AgentEscrow on X Layer mainnet | Deployed + Integrated |

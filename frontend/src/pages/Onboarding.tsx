@@ -755,7 +755,7 @@ export default function Onboarding() {
             </div>
           </div>
           <p className="text-sm text-text-secondary mb-3">
-            Email wallet creation &middot; TEE key storage &middot; Zero gas on X Layer &middot; Provided by OKX
+            Email wallet creation &middot; TEE key storage &middot; OKX-sponsored gas &middot; Provided by OKX
           </p>
           <div className="rounded-lg bg-abyss/60 border border-border/50 p-3">
             <code className="text-xs font-mono text-text-tertiary">npx skills add okx/onchainos-skills</code>

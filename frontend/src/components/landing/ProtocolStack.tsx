@@ -2,7 +2,7 @@ const PROTOCOLS = [
   { name: 'X Layer', desc: 'Settlement and proof recording chain', status: 'live' as const, color: '#f0b232' },
   { name: 'Agentic Wallet', desc: 'OKX TEE wallet — sign-info API integrated', status: 'integrated' as const, color: '#ff4d4f' },
   { name: 'OKX Onchain OS', desc: 'Market, DEX, and Wallet API for agents', status: 'live' as const, color: '#3b82f6' },
-  { name: 'x402', desc: 'HTTP 402 pay-per-call payment protocol', status: 'live' as const, color: '#a78bfa' },
+  { name: 'x402', desc: 'HTTP 402 pay-per-call (txHash verification)', status: 'live' as const, color: '#a78bfa' },
   { name: 'A2A v0.3', desc: 'Agent discovery and coordination', status: 'live' as const, color: '#00e5cc' },
   { name: 'MCP', desc: 'Agent-to-tool connectivity (5 tools)', status: 'live' as const, color: '#10b981' },
   { name: 'ERC-8004', desc: 'On-chain agent identity registry', status: 'deployed' as const, color: '#f0b232' },

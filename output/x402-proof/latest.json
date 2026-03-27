@@ -10,7 +10,7 @@
         "paymentRequirements": [
           {
             "scheme": "exact",
-            "network": "x-layer-testnet",
+            "network": "x-layer",
             "maxAmountRequired": "100000",
             "payTo": "0x031189016E014447C467163D4A818D847359f980",
             "asset": "0x9e29b3aada05bf2d2c827af80bd28dc0b9b4fb0c",
@@ -24,7 +24,7 @@
     "step2_request": "GET /api/signals/premium-okb + X-PAYMENT header",
     "step2_paymentProof": {
       "paid": true,
-      "txHash": "0x_evidence_capture_payment"
+      "txHash": "demo_proof_capture (not a real on-chain payment tx)"
     },
     "step2_body": {
       "signal": {
@@ -34,7 +34,7 @@
         "volume24h": "5268",
         "approved": false,
         "thresholdRule": "|24h_change| > 1% OR volume_24h > 5M USD; price > $1",
-        "signalSummary": "OKB at $85.51 (0.45% 24h, vol 5268) via Onchain OS Market API — threshold not met.",
+        "signalSummary": "OKB at $85.51 (0.45% 24h, vol 5268) via Onchain OS Market API \u2014 threshold not met.",
         "capturedAt": "2026-03-27T06:47:23.351Z",
         "onchainOSMetadata": {
           "marketCap": "36687590.690950854011581953",
@@ -59,5 +59,5 @@
     }
   },
   "protocol": "x402",
-  "description": "HTTP 402 payment flow with simplified verification"
+  "description": "HTTP 402 payment flow demonstration. Step 1 returns 402 with payment requirements. Step 2 shows premium data access after payment header submission. Payment verification is txHash-based (simplified), not full EIP-3009."
 }

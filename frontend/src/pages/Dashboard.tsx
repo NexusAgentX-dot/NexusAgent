@@ -666,7 +666,7 @@ export default function Dashboard() {
         <div className="grid md:grid-cols-4 gap-3">
           {[
             { label: 'OKX Onchain OS', detail: 'Market API + DEX', status: 'live', color: 'cyan' },
-            { label: 'x402 Payment', detail: 'HTTP 402 → Pay → 200', status: 'live', color: 'purple' },
+            { label: 'x402 Payment', detail: 'HTTP 402 flow, txHash verification', status: 'live', color: 'purple' },
             { label: 'ERC-8004', detail: 'Agent Identity Registry', status: 'ready', color: 'amber' },
             { label: 'ERC-8183', detail: 'Agentic Commerce Escrow', status: 'ready', color: 'amber' },
           ].map((proto) => (

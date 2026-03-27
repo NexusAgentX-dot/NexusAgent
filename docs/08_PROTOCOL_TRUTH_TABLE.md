@@ -114,13 +114,14 @@ If a claim is not safe here, it should not appear in the product, README, demo, 
 
 | Protocol | Implementation Status |
 |----------|----------------------|
-| OKX Onchain OS | LIVE — Market API (authenticated), DEX Quote API, Wallet sign-info API |
-| x402 | LIVE endpoint — HTTP 402 flow at `/api/signals/premium-okb` with simplified payment verification |
-| ERC-8004 | Draft standard — DEPLOYED + INTEGRATED on X Layer testnet (`0xc66DB3...`), runtime agent registration |
-| ERC-8183 | Draft standard — DEPLOYED + INTEGRATED on X Layer testnet (`0xB4dDf2...`), workflow escrow lifecycle (create/fund/submit/complete) |
+| OKX Onchain OS | LIVE — Market API (authenticated), DEX Quote API (quote-only), Wallet sign-info API |
+| x402 | LIVE endpoint — HTTP 402 flow with txHash-based verification (not full EIP-3009) |
+| ERC-8004 | DEPLOYED on X Layer mainnet (`0xB4dDf24c...`), runtime agent registration on-chain |
+| ERC-8183 | DEPLOYED on X Layer mainnet (`0xa5f560C6...`), escrow lifecycle executed on-chain (create/fund/submit/complete) |
 | A2A | Agent Card LIVE at `/.well-known/agent.json` with 3 skills |
-| MCP | LIVE — 5 tools via stdio transport (get_okb_signal, get_dex_quote, check_settlement_proof, check_wallet_status, get_integration_status) |
-| Agentic Wallet | sign-info API INTEGRATED in executor gas estimation + onboarding wallet verification; broadcast API not available (enterprise-only) |
+| MCP | LIVE — 5 tools via stdio transport |
+| Agentic Wallet | sign-info API integrated in executor + onboarding; email creation is OKX infrastructure |
+| Settlement | LIVE on X Layer mainnet — 2 settlement proofs + escrow lifecycle |
 
 ## OKX Onboarding Paths
 ### Safe
