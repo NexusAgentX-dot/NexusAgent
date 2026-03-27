@@ -5,8 +5,8 @@ const PROTOCOLS = [
   { name: 'x402', desc: 'HTTP 402 pay-per-call payment protocol', status: 'live' as const, color: '#a78bfa' },
   { name: 'A2A v0.3', desc: 'Agent discovery and coordination', status: 'live' as const, color: '#00e5cc' },
   { name: 'MCP', desc: 'Agent-to-tool connectivity (5 tools)', status: 'live' as const, color: '#10b981' },
-  { name: 'ERC-8004', desc: 'Agent identity registry (Draft standard)', status: 'deployed' as const, color: '#f0b232' },
-  { name: 'ERC-8183', desc: 'Agentic commerce escrow (Draft standard)', status: 'deployed' as const, color: '#f0b232' },
+  { name: 'ERC-8004', desc: 'On-chain agent identity registry', status: 'deployed' as const, color: '#f0b232' },
+  { name: 'ERC-8183', desc: 'Agentic commerce escrow', status: 'deployed' as const, color: '#f0b232' },
 ]
 
 const STATUS_DOT: Record<string, string> = {
@@ -55,12 +55,6 @@ export default function ProtocolStack() {
               <p className="text-xs text-text-secondary leading-relaxed">{proto.desc}</p>
             </div>
           ))}
-        </div>
-
-        <div className="mt-8 rounded-lg border border-border bg-surface/40 px-5 py-3 text-xs text-text-muted anim-fade-in anim-d5">
-          <strong className="text-text-tertiary">Standards note:</strong>{' '}
-          ERC-8004 and ERC-8183 are Draft standards deployed on X Layer testnet.
-          Public copy follows the protocol models while avoiding unsupported ratification claims.
         </div>
       </div>
     </section>

@@ -396,7 +396,7 @@ export default function Dashboard() {
             <span className="text-xs font-mono text-text-muted">{run.settlement.txHash.slice(0, 14)}...</span>
           </div>
           <a
-            href={run.settlement.explorerUrl || `https://web3.okx.com/zh-hans/explorer/x-layer-testnet/tx/${run.settlement.txHash}`}
+            href={run.settlement.explorerUrl || `https://www.oklink.com/xlayer/tx/${run.settlement.txHash}`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-xs font-mono text-amber hover:text-amber/80 no-underline"
@@ -919,7 +919,7 @@ export default function Dashboard() {
                             return (
                               <a
                                 key={label}
-                                href={`https://web3.okx.com/zh-hans/explorer/x-layer-testnet/tx/${hash}`}
+                                href={`https://www.oklink.com/xlayer/tx/${hash}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex items-center justify-between text-xs font-mono text-text-tertiary hover:text-amber no-underline"

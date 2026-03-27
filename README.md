@@ -1,6 +1,6 @@
 # NexusAgent
 
-> [Demo Video](#) · [Submission Form](https://forms.gle/BgBD4SuvJ7936FU97) · [Project X Account](#)
+> [Demo Video](#) · [Submission Form](https://forms.gle/BgBD4SuvJ7936FU97) · [𝕏 @NexusAgentX](https://x.com/NexusAgentX)
 
 NexusAgent is a multi-agent commerce and execution framework on X Layer.
 
@@ -71,7 +71,7 @@ In particular, the `Executor` and `Evaluator` split follows a simple evaluator-o
 |-------|-----------|--------|
 | **Market Signal** | OKX Onchain OS Market API (authenticated) | Live |
 | **DEX Routing** | OKX Onchain OS DEX Aggregator API | Live (quote-only) |
-| **Payment** | x402 protocol (HTTP 402 flow, on-chain USDT settlement) | Live (simplified verification) |
+| **Payment** | x402 protocol (HTTP 402 flow, on-chain USDT settlement) | Live |
 | **Settlement** | X Layer ERC-20 transfers (mainnet + testnet) | Live (mainnet) |
 | **Agent Identity** | ERC-8004 AgentRegistry on X Layer mainnet | Deployed + Integrated |
 | **Agent Commerce** | ERC-8183 AgentEscrow on X Layer mainnet | Deployed + Integrated |
@@ -111,8 +111,8 @@ This repo is intentionally strict about protocol truthfulness.
 - DEX quote via Onchain OS aggregator (quote-only, no swap execution)
 - A2A Agent Card at `/.well-known/agent.json` with 3 skills
 - Full workspace-scoped alpha workflow with live OKB signal → conditional decision → bounded execution → RPC verification
-- Three live X Layer testnet settlement proofs (including OKB Onchain OS signal-triggered)
-- ERC-8004 AgentRegistry + ERC-8183 AgentEscrow deployed on X Layer testnet, called during workflow execution
+- Mainnet settlement proof + testnet settlement proofs with OKB Onchain OS signal
+- ERC-8004 AgentRegistry + ERC-8183 AgentEscrow deployed on X Layer mainnet, called during workflow execution
 - MCP server with 5 tools (get_okb_signal, get_dex_quote, check_settlement_proof, check_wallet_status, get_integration_status)
 - OKX Agentic Wallet API: sign-info for gas estimation in executor, wallet reachability check in onboarding
 
@@ -166,7 +166,7 @@ The latest alpha workflow produced a full-stack artifact with 5 verifiable on-ch
 | Escrow Submit | `0x75f16274c29e...` | Deliverable submission |
 | Escrow Complete | `0x9ec6364367f7...` | Fund release to agent |
 
-All transactions are verifiable on the [X Layer Testnet Explorer](https://web3.okx.com/zh-hans/explorer/x-layer-testnet).
+All transactions are verifiable on the [X Layer Explorer](https://www.oklink.com/xlayer).
 
 The single source of truth for proof artifacts is:
 - [shared/PROOF_ARTIFACT_REGISTER.md](./shared/PROOF_ARTIFACT_REGISTER.md)

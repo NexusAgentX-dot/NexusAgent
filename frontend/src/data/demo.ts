@@ -62,7 +62,7 @@ export const demoApprovedRun: WorkflowRun = {
       output: {
         preparedAction: 'stablecoin_proof_transfer',
         executionResult: 'submitted',
-        txHash: '0x7d3fe82a1b8833ce1f7c0d063271a3678d1ffbb1c6e68fe8ee5c002fac5d224d',
+        txHash: '0x5c49ba298cccab1e6c05d1c27b4cc02816d21aa7f3c9de3c40c8d0eba905d37f',
       },
       startedAt: '2026-03-27T10:00:41Z',
       completedAt: '2026-03-27T10:01:10Z',
@@ -73,7 +73,7 @@ export const demoApprovedRun: WorkflowRun = {
       role: 'verification_engine',
       status: 'completed',
       summary: 'Verified the execution result and marked the run as settlement-ready.',
-      input: { executionResult: 'submitted', txHash: '0x7d3fe82a1b8833ce1f7c0d063271a3678d1ffbb1c6e68fe8ee5c002fac5d224d' },
+      input: { executionResult: 'submitted', txHash: '0x5c49ba298cccab1e6c05d1c27b4cc02816d21aa7f3c9de3c40c8d0eba905d37f' },
       output: {
         result: 'pass',
         evaluationNote: 'A live X Layer stablecoin transfer hash is present and explorer-verifiable.',
@@ -153,11 +153,11 @@ export const demoApprovedRun: WorkflowRun = {
   settlement: {
     chain: 'X Layer',
     status: 'confirmed',
-    txHash: '0x7d3fe82a1b8833ce1f7c0d063271a3678d1ffbb1c6e68fe8ee5c002fac5d224d',
+    txHash: '0x5c49ba298cccab1e6c05d1c27b4cc02816d21aa7f3c9de3c40c8d0eba905d37f',
     explorerUrl:
-      'https://web3.okx.com/zh-hans/explorer/x-layer-testnet/tx/0x7d3fe82a1b8833ce1f7c0d063271a3678d1ffbb1c6e68fe8ee5c002fac5d224d',
+      'https://www.oklink.com/xlayer/tx/0x5c49ba298cccab1e6c05d1c27b4cc02816d21aa7f3c9de3c40c8d0eba905d37f',
     proofSummary:
-      'Live X Layer testnet settlement artifact: 0.10 USD₮0 transferred to the proof address and verified on the official explorer.',
+      'Live X Layer mainnet settlement: 0.01 USD₮0 bounded transfer verified on OKLink explorer.',
   },
 }
 
