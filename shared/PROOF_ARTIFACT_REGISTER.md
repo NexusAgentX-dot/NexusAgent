@@ -91,6 +91,15 @@ Until then:
 - `AgentRegistry (ERC-8004)`: `0xB4dDf24c8a6cBDEB976d27C4A142f076272EfEC0` (X Layer Mainnet)
 - `AgentEscrow (ERC-8183)`: `0xa5f560C60F5912bE1a44D24A78B6e82e7C50F455` (X Layer Mainnet)
 
+### Mainnet Escrow Lifecycle (ERC-8183) — 4 on-chain txs
+- `escrowContract`: `0xa5f560C60F5912bE1a44D24A78B6e82e7C50F455`
+- `createJobTx`: `0x667e50fd0f1e4e1201fa81396b366d975011b36eb4590ff74d55dccca7c68ea8`
+- `fundJobTx`: `0xd699d8a34b41d9216c646407b4f56cb73c8412d692a1b804bcdcf44778b489f8`
+- `submitJobTx`: `0xba4e7706ced63afee211151a9984f61b4dbc4fedd5f3c7a0ce4505c21476e93d`
+- `completeJobTx`: `0x663151bb3933c7b9d26e2878bf72d5d068a2ab23af03e67d257a0f5b6bc23a2d`
+- `amount`: 0.01 USDT
+- `capturedAt`: `2026-03-27T07:30:00Z`
+
 ### Mainnet Agent Registration (ERC-8004)
 - Sentinel: `0xf84bea496c2124a96f3698bf47d78833dc0fa6927414eae78c28d84dfc65e10d`
 - Arbiter: `0x64056584bff2cc668aa7065d98611d8c84d4d2568337fcf0cd3a397cf3e0d4e5`
