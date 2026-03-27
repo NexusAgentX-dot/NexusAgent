@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640">
+  <!-- GitHub Social Preview — 1280x640 -->
+
+  <!-- Background -->
+  <rect width="1280" height="640" fill="#060a13"/>
+
+  <!-- Subtle grid -->
+  <defs>
+    <pattern id="ggrid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#00e5cc" stroke-opacity="0.03" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="640" fill="url(#ggrid)"/>
+
+  <!-- Logo icon centered top -->
+  <rect x="555" y="100" width="170" height="170" rx="32" fill="#0f1724" stroke="#00e5cc" stroke-width="7"/>
+  <path
+    d="M 596,240 L 596,130 L 618,130 L 662,212 L 662,130 L 684,130 L 684,240 L 662,240 L 618,158 L 618,240 Z"
+    fill="#ffffff"
+  />
+
+  <!-- Title -->
+  <text x="640" y="330" text-anchor="middle" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="48" font-weight="800" fill="#ffffff" letter-spacing="-0.5">NexusAgent</text>
+
+  <!-- Subtitle -->
+  <text x="640" y="375" text-anchor="middle" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="400" fill="#8a94a6">Multi-Agent Commerce &amp; Execution Framework on X Layer</text>
+
+  <!-- 4 Agent roles in cyan -->
+  <text x="380" y="450" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="15" font-weight="600" fill="#00e5cc">Sentinel</text>
+  <text x="520" y="450" text-anchor="middle" font-family="'Inter',sans-serif" font-size="15" fill="#2a3444">·</text>
+  <text x="545" y="450" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="15" font-weight="600" fill="#00e5cc">Arbiter</text>
+  <text x="660" y="450" text-anchor="middle" font-family="'Inter',sans-serif" font-size="15" fill="#2a3444">·</text>
+  <text x="735" y="450" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="15" font-weight="600" fill="#00e5cc">Executor</text>
+  <text x="830" y="450" text-anchor="middle" font-family="'Inter',sans-serif" font-size="15" fill="#2a3444">·</text>
+  <text x="900" y="450" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="15" font-weight="600" fill="#00e5cc">Evaluator</text>
+
+  <!-- Bottom line -->
+  <text x="640" y="545" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="12" fill="#3a4456" letter-spacing="0.5">Live Settlement Proof on X Layer · Open Source</text>
+</svg>

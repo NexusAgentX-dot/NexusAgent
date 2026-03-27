@@ -1,0 +1,31 @@
+{
+  "name": "nexusagent-backend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --env-file=.env src/server.ts",
+    "start": "node --env-file=.env dist/server.js",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "validate": "tsx src/validate.ts",
+    "testnet:flow": "tsx src/live/runTestnetFlow.ts",
+    "mainnet:readiness": "tsx src/live/checkMainnetReadiness.ts",
+    "mcp": "tsx --env-file=.env src/mcp/server.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.28.0",
+    "cors": "^2.8.5",
+    "ethers": "^6.16.0",
+    "express": "^5.1.0",
+    "undici": "^7.24.6",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.12.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.3"
+  }
+}

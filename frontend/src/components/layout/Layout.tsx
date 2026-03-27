@@ -1,0 +1,24 @@
+import { Outlet } from 'react-router-dom'
+import Navbar from './Navbar'
+
+export default function Layout() {
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <main className="flex-1">
+        <Outlet />
+      </main>
+      <footer className="border-t border-border py-8 px-6">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 rounded-full bg-cyan" />
+            <span className="font-mono text-sm text-text-secondary">NexusAgent</span>
+          </div>
+          <p className="text-xs text-text-muted">
+            Built on X Layer &middot; Powered by OKX Onchain OS &middot; Standards-aligned agent commerce
+          </p>
+        </div>
+      </footer>
+    </div>
+  )
+}

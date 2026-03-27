@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Twitter/X Avatar — Logo centered on dark bg, works with circular crop -->
+
+  <!-- Background (full square, X crops to circle) -->
+  <rect width="400" height="400" fill="#0a1018"/>
+
+  <!-- Centered logo icon -->
+  <rect x="80" y="80" width="240" height="240" rx="44" fill="#0f1724" stroke="#00e5cc" stroke-width="10"/>
+  <path
+    d="M 138,262 L 138,138 L 168,138 L 232,236 L 232,138 L 262,138 L 262,262 L 232,262 L 168,164 L 168,262 Z"
+    fill="#ffffff"
+  />
+</svg>
