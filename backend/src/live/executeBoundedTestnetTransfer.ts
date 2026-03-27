@@ -10,7 +10,7 @@ const IS_MAINNET = NETWORK === 'mainnet'
 const DEFAULT_RPC_URL = IS_MAINNET ? 'https://rpc.xlayer.tech' : 'https://testrpc.xlayer.tech/terigon'
 const DEFAULT_CHAIN_ID = IS_MAINNET ? 196n : 1952n
 const DEFAULT_TOKEN_ADDRESS = IS_MAINNET
-  ? (process.env.NEXUSAGENT_XLAYER_MAINNET_USDT?.trim() || '0x1E4a5963aBFD975d8c9021ce480b42188849D41d')
+  ? (process.env.NEXUSAGENT_XLAYER_MAINNET_USDT?.trim() || '0x779ded0c9e1022225f8e0630b35a9b54be713736')
   : '0x9e29b3aada05bf2d2c827af80bd28dc0b9b4fb0c'
 const DEFAULT_TRANSFER_AMOUNT = IS_MAINNET ? '0.01' : '0.10'
 const DEFAULT_EXPLORER_BASE = IS_MAINNET

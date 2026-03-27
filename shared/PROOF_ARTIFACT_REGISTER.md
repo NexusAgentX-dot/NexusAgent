@@ -76,6 +76,27 @@ Until then:
 - `authentication`: HMAC-SHA256 signed headers (OK-ACCESS-KEY, OK-ACCESS-SIGN, OK-ACCESS-TIMESTAMP, OK-ACCESS-PASSPHRASE, OK-ACCESS-PROJECT)
 - `capturedAt`: `2026-03-27T06:00:00Z`
 
+## X Layer Mainnet Proof Artifacts
+
+### Mainnet Settlement Transfer
+- `xLayerTxHash`: `0x5c49ba298cccab1e6c05d1c27b4cc02816d21aa7f3c9de3c40c8d0eba905d37f`
+- `explorerUrl`: `https://www.oklink.com/xlayer/tx/0x5c49ba298cccab1e6c05d1c27b4cc02816d21aa7f3c9de3c40c8d0eba905d37f`
+- `network`: X Layer Mainnet (chain 196)
+- `amount`: 0.01 USD₮0
+- `token`: `0x779ded0c9e1022225f8e0630b35a9b54be713736`
+- `block`: 55826972
+- `capturedAt`: `2026-03-27T07:20:11.183Z`
+
+### Mainnet Smart Contracts
+- `AgentRegistry (ERC-8004)`: `0xB4dDf24c8a6cBDEB976d27C4A142f076272EfEC0` (X Layer Mainnet)
+- `AgentEscrow (ERC-8183)`: `0xa5f560C60F5912bE1a44D24A78B6e82e7C50F455` (X Layer Mainnet)
+
+### Mainnet Agent Registration (ERC-8004)
+- Sentinel: `0xf84bea496c2124a96f3698bf47d78833dc0fa6927414eae78c28d84dfc65e10d`
+- Arbiter: `0x64056584bff2cc668aa7065d98611d8c84d4d2568337fcf0cd3a397cf3e0d4e5`
+- Executor: `0xc9ac0e0cc30bc0022e4b3b93af3f660563337f07313e368f6a1f779f4228609b`
+- Evaluator: `0x8dcdeb7f7e4b548af3a29b21276b393226c8fa8f968ab868f447421594e2d305`
+
 ## x402 Payment Flow Evidence
 - `evidenceFile`: `output/x402-proof/latest.json`
 - `flow`: GET /api/signals/premium-okb → HTTP 402 + PAYMENT-REQUIRED header → X-PAYMENT header → HTTP 200 + premium signal

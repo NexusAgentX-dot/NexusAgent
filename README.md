@@ -72,9 +72,9 @@ In particular, the `Executor` and `Evaluator` split follows a simple evaluator-o
 | **Market Signal** | OKX Onchain OS Market API (authenticated) | Live |
 | **DEX Routing** | OKX Onchain OS DEX Aggregator API | Live (quote-only) |
 | **Payment** | x402 protocol (HTTP 402 flow, on-chain USDT settlement) | Live (simplified verification) |
-| **Settlement** | X Layer ERC-20 transfers (testnet + mainnet-ready) | Live |
-| **Agent Identity** | ERC-8004 AgentRegistry on X Layer testnet | Deployed + Integrated |
-| **Agent Commerce** | ERC-8183 AgentEscrow on X Layer testnet | Deployed + Integrated |
+| **Settlement** | X Layer ERC-20 transfers (mainnet + testnet) | Live (mainnet) |
+| **Agent Identity** | ERC-8004 AgentRegistry on X Layer mainnet | Deployed + Integrated |
+| **Agent Commerce** | ERC-8183 AgentEscrow on X Layer mainnet | Deployed + Integrated |
 | **Agent Discovery** | A2A v0.3 Agent Card (`/.well-known/agent.json`) | Live |
 | **Coordination** | A2A v1.0 agent-to-agent protocol | Modeled |
 | **Connectivity** | MCP server (stdio, 5 tools) | Live |
@@ -122,17 +122,29 @@ This repo is intentionally strict about protocol truthfulness.
 - ERC-8183 escrow lifecycle runs best-effort (graceful degradation if token balance insufficient)
 - DEX aggregator returns quote data but does not execute swaps
 
-## Live Settlement Proof
+## Settlement Proof
 
-- tx hash:
-  - `0x7d3fe82a1b8833ce1f7c0d063271a3678d1ffbb1c6e68fe8ee5c002fac5d224d`
-- explorer:
-  - [X Layer testnet explorer](https://web3.okx.com/zh-hans/explorer/x-layer-testnet/tx/0x7d3fe82a1b8833ce1f7c0d063271a3678d1ffbb1c6e68fe8ee5c002fac5d224d)
-- proof summary:
-  - live X Layer testnet settlement artifact for a bounded `0.10 USD₮0` transfer
+### Mainnet
+- TX: `0x5c49ba298cccab1e6c05d1c27b4cc02816d21aa7f3c9de3c40c8d0eba905d37f`
+- Explorer: [View on OKLink](https://www.oklink.com/xlayer/tx/0x5c49ba298cccab1e6c05d1c27b4cc02816d21aa7f3c9de3c40c8d0eba905d37f)
+- 0.01 USD₮0 bounded transfer on X Layer mainnet (chain 196)
 
-## Deployed Smart Contracts (X Layer Testnet)
+### Testnet (Development)
+- TX: `0x7d3fe82a1b8833ce1f7c0d063271a3678d1ffbb1c6e68fe8ee5c002fac5d224d`
+- Explorer: [View on X Layer Testnet](https://web3.okx.com/zh-hans/explorer/x-layer-testnet/tx/0x7d3fe82a1b8833ce1f7c0d063271a3678d1ffbb1c6e68fe8ee5c002fac5d224d)
+- 0.10 USD₮0 bounded transfer + 5 ERC-8183 escrow transactions
 
+## Deployed Smart Contracts
+
+### Mainnet (X Layer, chain 196)
+| Contract | Address | Standard |
+|----------|---------|----------|
+| AgentRegistry | `0xB4dDf24c8a6cBDEB976d27C4A142f076272EfEC0` | ERC-8004 |
+| AgentEscrow | `0xa5f560C60F5912bE1a44D24A78B6e82e7C50F455` | ERC-8183 |
+
+4 agents registered on-chain (Sentinel, Arbiter, Executor, Evaluator).
+
+### Testnet (X Layer, chain 1952)
 | Contract | Address | Standard |
 |----------|---------|----------|
 | AgentRegistry | `0xc66DB3F3D07045686307674A261482d3e5EF9B79` | ERC-8004 | X Layer Testnet |
