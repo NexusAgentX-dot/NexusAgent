@@ -1,5 +1,5 @@
 const REASONS = [
-  { title: 'TEE Wallet', desc: 'OKX Agentic Wallet with hardware-protected keys', icon: '🔐' },
+  { title: 'TEE Wallet', desc: 'OKX Agentic Wallet — sign-info API for gas estimation', icon: '🔐' },
   { title: 'Onchain OS', desc: 'Market, DEX, Wallet APIs in one ecosystem', icon: '⚡' },
   { title: 'Settlement', desc: 'Explorer-verifiable proof on X Layer', icon: '📋' },
   { title: 'Onboarding', desc: 'AI Skills + MCP integration paths', icon: '🔗' },

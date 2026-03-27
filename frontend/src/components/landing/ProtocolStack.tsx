@@ -1,6 +1,6 @@
 const PROTOCOLS = [
   { name: 'X Layer', desc: 'Settlement and proof recording chain', status: 'live' as const, color: '#f0b232' },
-  { name: 'Agentic Wallet', desc: 'TEE-protected secure wallet for AI agents', status: 'integrated' as const, color: '#ff4d4f' },
+  { name: 'Agentic Wallet', desc: 'OKX TEE wallet — sign-info API integrated', status: 'integrated' as const, color: '#ff4d4f' },
   { name: 'OKX Onchain OS', desc: 'Market, DEX, and Wallet API for agents', status: 'live' as const, color: '#3b82f6' },
   { name: 'x402', desc: 'HTTP 402 pay-per-call payment protocol', status: 'live' as const, color: '#a78bfa' },
   { name: 'A2A v0.3', desc: 'Agent discovery and coordination', status: 'live' as const, color: '#00e5cc' },

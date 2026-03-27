@@ -78,15 +78,18 @@ In particular, the `Executor` and `Evaluator` split follows a simple evaluator-o
 | **Agent Discovery** | A2A v0.3 Agent Card (`/.well-known/agent.json`) | Live |
 | **Coordination** | A2A v1.0 agent-to-agent protocol | Modeled |
 | **Connectivity** | MCP server (stdio, 5 tools) | Live |
-| **Wallet Security** | OKX Agentic Wallet API (TEE, sign-info) | Integrated |
+| **Wallet Security** | OKX Agentic Wallet (sign-info API integrated; TEE via OKX) | Integrated |
 
 ## Agentic Wallet Integration
 
-NexusAgent integrates OKX Agentic Wallet API for secure agent operations:
-- **Gas estimation** via Wallet `sign-info` API before chain operations
-- **Wallet verification** during agent onboarding via Onchain OS
-- **TEE security** — private keys never leave the Trusted Execution Environment
-- **Zero gas on X Layer** — OKX-sponsored gas for stablecoin operations
+NexusAgent integrates with OKX Agentic Wallet at the API level:
+- **Gas estimation** via Wallet `sign-info` API before chain operations (integrated in executor)
+- **Wallet reachability check** during agent onboarding via Onchain OS API
+
+OKX Agentic Wallet provides additional capabilities that agents can use directly:
+- Email-based wallet creation via `npx skills add okx/onchainos-skills`
+- TEE-protected key storage (OKX infrastructure, not managed by NexusAgent)
+- Zero gas on X Layer for stablecoin operations (OKX-sponsored)
 
 ## OKX Onchain OS Evidence
 

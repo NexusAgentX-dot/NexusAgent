@@ -750,12 +750,12 @@ export default function Onboarding() {
           <div className="flex items-center gap-3 mb-3">
             <div className="w-8 h-8 rounded-lg bg-amber/10 border border-amber/20 flex items-center justify-center text-amber font-mono text-sm">W</div>
             <div>
-              <h3 className="text-sm font-semibold text-text-primary">Agentic Wallet</h3>
-              <span className="text-[10px] font-mono text-amber uppercase tracking-wider">TEE Protected</span>
+              <h3 className="text-sm font-semibold text-text-primary">OKX Agentic Wallet</h3>
+              <span className="text-[10px] font-mono text-amber uppercase tracking-wider">OKX Infrastructure</span>
             </div>
           </div>
           <p className="text-sm text-text-secondary mb-3">
-            Email login &middot; TEE-protected keys &middot; Zero gas on X Layer &middot; ~20 chains supported
+            Email wallet creation &middot; TEE key storage &middot; Zero gas on X Layer &middot; Provided by OKX
           </p>
           <div className="rounded-lg bg-abyss/60 border border-border/50 p-3">
             <code className="text-xs font-mono text-text-tertiary">npx skills add okx/onchainos-skills</code>
