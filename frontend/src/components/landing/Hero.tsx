@@ -57,11 +57,11 @@ export default function Hero() {
                 <span className="w-px h-3 bg-border" />
               </>
             ) : null}
-            <span className="text-xs font-mono text-text-muted">5 On-Chain Proofs</span>
+            <span className="text-xs font-mono text-text-muted">12+ On-Chain TXs</span>
             <span className="w-px h-3 bg-border hidden md:block" />
             <span className="text-xs font-mono text-text-muted hidden md:block">4 Agents</span>
             <span className="w-px h-3 bg-border hidden md:block" />
-            <span className="text-xs font-mono text-text-muted hidden md:block">X Layer Testnet</span>
+            <span className="text-xs font-mono text-text-muted hidden md:block">X Layer Mainnet</span>
           </div>
         </div>
 

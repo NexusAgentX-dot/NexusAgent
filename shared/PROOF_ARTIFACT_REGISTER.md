@@ -17,16 +17,13 @@ They must never silently flow into final README, UI, or submission copy.
 
 ## Status
 Current status:
-- live X Layer testnet tx hash captured
-- official explorer URL confirmed
-- payment step remains `x402_compatible_demo`
-- settlement proof is now live while payment remains demo-compatible
-
-## Notes
-When a real proof artifact is captured, update this file first.
-Until then:
-- UI must not present the placeholder artifact as a live confirmed demo proof
-- README and submission copy must distinguish payment demo state from settlement proof state
+- X Layer **mainnet** settlement proof captured (0x5c49ba29..., 0x173401a3...)
+- X Layer **mainnet** ERC-8004 AgentRegistry deployed + 4 agents registered
+- X Layer **mainnet** ERC-8183 AgentEscrow deployed + full lifecycle (create/fund/submit/complete)
+- External AI agent E2E via @nexusagent/skills CLI completed on mainnet
+- Payment mode: `transfer_event` (on-chain USDT settlement)
+- x402 premium endpoint: HTTP 402 flow live
+- OKX Onchain OS: Market API + DEX + Wallet sign-info integrated
 
 ## Captured Artifact
 - `xLayerTxHash`: `0x7d3fe82a1b8833ce1f7c0d063271a3678d1ffbb1c6e68fe8ee5c002fac5d224d`
