@@ -11,7 +11,7 @@ export default function Layout() {
       <footer className="border-t border-border py-8 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-cyan" />
+            <img src="/brand/logo.svg" alt="NexusAgent" className="w-5 h-5 rounded" />
             <span className="font-mono text-sm text-text-secondary">NexusAgent</span>
           </div>
           <div className="flex items-center gap-4">

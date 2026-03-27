@@ -57,7 +57,8 @@ function evaluateApproval(price: string, change24h: string, volume24h: string): 
   // - 24h price change magnitude > 1% (volatility = opportunity)
   // - OR volume > 5M USD (significant liquidity)
   // - AND price is within reasonable bounds (> $1)
-  const hasVolatility = Math.abs(changeNum) > 1
+  const volatilityThreshold = parseFloat(process.env.NEXUSAGENT_SIGNAL_VOLATILITY_THRESHOLD || '1')
+  const hasVolatility = Math.abs(changeNum) > volatilityThreshold
   const hasVolume = volNum > 5_000_000
   const priceReasonable = priceNum > 1
 

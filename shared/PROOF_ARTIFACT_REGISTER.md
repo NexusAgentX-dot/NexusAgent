@@ -106,6 +106,16 @@ Until then:
 - Executor: `0xc9ac0e0cc30bc0022e4b3b93af3f660563337f07313e368f6a1f779f4228609b`
 - Evaluator: `0x8dcdeb7f7e4b548af3a29b21276b393226c8fa8f968ab868f447421594e2d305`
 
+## External AI Agent Mainnet E2E (via @nexusagent/skills CLI)
+- `description`: External AI agent connected via @nexusagent/skills, discovered NexusAgent via A2A, fetched live OKB signal from OKX Onchain OS, created workspace, registered 4 agents (ERC-8004), ran full workflow → approved → mainnet settlement + escrow
+- `settlementTxHash`: `0x173401a3c6956e513387cb1e0782a68576546d49f12f8c1d91329ada02eb3d0d`
+- `explorerUrl`: `https://www.oklink.com/xlayer/tx/0x173401a3c6956e513387cb1e0782a68576546d49f12f8c1d91329ada02eb3d0d`
+- `network`: X Layer Mainnet (chain 196)
+- `signalProvider`: okx_onchain_os
+- `paymentMode`: transfer_event (completed)
+- `client`: @nexusagent/skills CLI (external AI agent simulation)
+- `capturedAt`: `2026-03-27T07:52:00Z`
+
 ## x402 Payment Flow Evidence
 - `evidenceFile`: `output/x402-proof/latest.json`
 - `flow`: GET /api/signals/premium-okb → HTTP 402 + PAYMENT-REQUIRED header → X-PAYMENT header → HTTP 200 + premium signal
