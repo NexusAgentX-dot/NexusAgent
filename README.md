@@ -1,6 +1,6 @@
 # NexusAgent
 
-> [Demo Video](#) · [Submission Form](https://forms.gle/BgBD4SuvJ7936FU97) · [𝕏 @NexusAgentX](https://x.com/NexusAgentX)
+> [Submission Form](https://forms.gle/BgBD4SuvJ7936FU97) · [𝕏 @NexusAgentX](https://x.com/NexusAgentX) · [GitHub](https://github.com/NexusAgentX-dot/NexusAgent)
 
 NexusAgent is a multi-agent commerce and execution framework on X Layer.
 

@@ -763,6 +763,40 @@ export default function Onboarding() {
         </div>
       </section>
 
+      {/* CLI Quick Start */}
+      <section className="mb-16">
+        <h2 className="text-xl font-semibold mb-4">Quick Start: Connect via CLI</h2>
+        <div className="rounded-xl border border-border bg-surface/40 p-6">
+          <p className="text-sm text-text-secondary mb-4">
+            External AI agents can connect to NexusAgent programmatically using the Skills CLI.
+            This is the fastest path from zero to a running workflow on X Layer mainnet.
+          </p>
+          <div className="grid md:grid-cols-3 gap-4 mb-4">
+            <div className="rounded-lg bg-abyss/60 border border-border/50 p-4">
+              <div className="text-[10px] font-mono text-cyan uppercase tracking-wider mb-2">1. Install</div>
+              <code className="text-xs font-mono text-text-tertiary">npm install @nexusagent/skills</code>
+            </div>
+            <div className="rounded-lg bg-abyss/60 border border-border/50 p-4">
+              <div className="text-[10px] font-mono text-cyan uppercase tracking-wider mb-2">2. Connect</div>
+              <code className="text-xs font-mono text-text-tertiary">npx @nexusagent/skills init</code>
+            </div>
+            <div className="rounded-lg bg-abyss/60 border border-border/50 p-4">
+              <div className="text-[10px] font-mono text-cyan uppercase tracking-wider mb-2">3. Run</div>
+              <code className="text-xs font-mono text-text-tertiary">npx @nexusagent/skills run</code>
+            </div>
+          </div>
+          <div className="rounded-lg bg-abyss/60 border border-cyan/20 p-4">
+            <div className="text-[10px] font-mono text-cyan uppercase tracking-wider mb-2">Programmatic Usage</div>
+            <pre className="text-xs font-mono text-text-tertiary whitespace-pre-wrap">{`import { NexusAgentClient } from '@nexusagent/skills'
+const client = new NexusAgentClient()
+const signal = await client.getOKBSignal()  // Live OKB from Onchain OS
+const ws = await client.createWorkspace('My Agent', 'my-agent')
+await client.registerCanonicalAgents(ws.workspaceId)
+const result = await client.runWorkflow(ws.workspaceId, 'Check OKB and execute')`}</pre>
+          </div>
+        </div>
+      </section>
+
       {/* Registration schema */}
       <section className="mb-16">
         <h2 className="text-xl font-semibold mb-2">Agent Registration Schema</h2>
