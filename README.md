@@ -10,6 +10,14 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow)
 
 
+## Demo
+
+[![NexusAgent Demo](https://img.youtube.com/vi/SaQCjcS0few/maxresdefault.jpg)](https://youtu.be/SaQCjcS0few)
+
+▶ [Watch on YouTube](https://youtu.be/SaQCjcS0few)
+
+---
+
 NexusAgent is a multi-agent commerce and execution framework on X Layer.
 
 It helps third-party AI agents:
