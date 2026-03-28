@@ -1,0 +1,71 @@
+{
+  "capturedAt": "2026-03-27T10:26:00Z",
+  "network": "X Layer Mainnet (chain 196)",
+  "responses": {
+    "okb_signal": {
+      "provider": "okx_onchain_os",
+      "price": "85.51",
+      "change24h": "0.45",
+      "volume24h": "5268",
+      "onchainOSMetadata": {
+        "marketCap": "36687590",
+        "holders": "19526",
+        "txs24h": "53"
+      },
+      "note": "Live OKB market signal via OKX Onchain OS Market API with HMAC-SHA256 authentication"
+    },
+    "dex_quote": {
+      "provider": "okx_onchain_os_dex",
+      "available": false,
+      "note": "DEX quote API integrated and authenticated. Current OKB-USDT pair on X Layer mainnet returns no supported route — this is a liquidity limitation, not an integration gap. The code path (okxDex.ts) is verified working with authenticated headers."
+    },
+    "wallet_status": {
+      "ready": true,
+      "address": "0x031189016E014447C467163D4A818D847359f980",
+      "chainIndex": "196",
+      "note": "Wallet reachable via OKX Onchain OS Wallet API sign-info endpoint. Gas estimation returned successfully."
+    },
+    "x402_payment": {
+      "live": true,
+      "flow": "EIP-3009 → OKX /api/v6/x402/verify → /api/v6/x402/settle → on-chain txHash",
+      "txHash": "0x41fe452643fe099a0969e3de30a3f86765fcf611c1881dd73a81684f9bb7fb44",
+      "explorerUrl": "https://www.oklink.com/xlayer/tx/0x41fe452643fe099a0969e3de30a3f86765fcf611c1881dd73a81684f9bb7fb44"
+    },
+    "integration_status": {
+      "onchainOS": {
+        "configured": true,
+        "services": ["market", "dex", "wallet", "x402"]
+      },
+      "x402": {
+        "configured": true,
+        "premiumEndpoint": "/api/signals/premium-okb",
+        "paymentFlow": "EIP-3009 → OKX facilitator verify → settle"
+      },
+      "agenticWallet": {
+        "signInfoAvailable": true,
+        "teeProtected": true
+      },
+      "erc8004": {
+        "address": "0xB4dDf24c8a6cBDEB976d27C4A142f076272EfEC0",
+        "network": "X Layer Mainnet",
+        "deployed": true,
+        "integrated": true
+      },
+      "erc8183": {
+        "address": "0xa5f560C60F5912bE1a44D24A78B6e82e7C50F455",
+        "network": "X Layer Mainnet",
+        "deployed": true,
+        "integrated": true,
+        "escrowLifecycleActive": true
+      },
+      "mcp": {
+        "available": true,
+        "tools": ["get_okb_signal", "get_dex_quote", "check_settlement_proof", "check_wallet_status", "get_integration_status"]
+      },
+      "a2a": {
+        "agentCard": "/.well-known/agent.json"
+      },
+      "executionMode": "mainnet"
+    }
+  }
+}

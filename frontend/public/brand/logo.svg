@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- NexusAgent Logo — Final -->
+  <!-- Rounded square with cyan border, dark fill, white bold N -->
+
+  <!-- Outer rounded rect (cyan border) -->
+  <rect x="40" y="40" width="320" height="320" rx="56" fill="#0f1724" stroke="#00e5cc" stroke-width="14"/>
+
+  <!-- Bold white N — centered at (200,200) -->
+  <path
+    d="M 118,284 L 118,116 L 152,116 L 248,248 L 248,116 L 282,116 L 282,284 L 248,284 L 152,152 L 152,284 Z"
+    fill="#ffffff"
+  />
+</svg>

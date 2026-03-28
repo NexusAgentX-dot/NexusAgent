@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+backend/.env
+data/
+output/testnet-flow/
+output/alpha-live/
+output/validation/
+output/playwright/
+.playwright-cli/
+*.log
+.DS_Store
+.claude/
+contracts/cache/

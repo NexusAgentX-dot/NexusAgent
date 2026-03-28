@@ -1,0 +1,43 @@
+{
+  "capturedAt": "2026-03-27T10:26:00Z",
+  "network": "X Layer Mainnet (chain 196)",
+  "flow": {
+    "step1_request": "GET /api/signals/premium-okb (no payment header)",
+    "step1_response": 402,
+    "step1_paymentRequirements": {
+      "scheme": "exact",
+      "network": "x-layer",
+      "maxAmountRequired": "10000",
+      "payTo": "0x031189016E014447C467163D4A818D847359f980",
+      "asset": "0x779ded0c9e1022225f8e0630b35a9b54be713736",
+      "resource": "/api/signals/premium-okb",
+      "description": "Pay 0.01 USDT via x402 for premium OKB market signal with risk analysis"
+    },
+    "step2_eip3009_signature": "EIP-712 typed data signed by payer wallet",
+    "step3_verification": "OKX /api/v6/x402/verify → isValid: true",
+    "step4_settlement": "OKX /api/v6/x402/settle → success: true",
+    "step5_response": 200,
+    "settlementTxHash": "0x41fe452643fe099a0969e3de30a3f86765fcf611c1881dd73a81684f9bb7fb44",
+    "explorerUrl": "https://www.oklink.com/xlayer/tx/0x41fe452643fe099a0969e3de30a3f86765fcf611c1881dd73a81684f9bb7fb44"
+  },
+  "premiumSignalResponse": {
+    "signal": {
+      "provider": "okx_onchain_os",
+      "price": "85.51",
+      "change24h": "0.45"
+    },
+    "x402": {
+      "status": "settled",
+      "paymentTxHash": "0x41fe452643fe099a0969e3de30a3f86765fcf611c1881dd73a81684f9bb7fb44",
+      "settledOnChain": true,
+      "facilitator": "OKX facilitator: verified + settled on-chain"
+    }
+  },
+  "previousSettlement": {
+    "txHash": "0xd6d0fa98e9ad5e1be208f39371e81e1ee7d0275ff4b20ef6f38b9e4e82315edf",
+    "explorerUrl": "https://www.oklink.com/xlayer/tx/0xd6d0fa98e9ad5e1be208f39371e81e1ee7d0275ff4b20ef6f38b9e4e82315edf",
+    "method": "Direct OKX facilitator call"
+  },
+  "protocol": "x402 via OKX Onchain OS Facilitator",
+  "description": "Full x402 payment flow: HTTP 402 → EIP-3009 signature → OKX /api/v6/x402/verify → OKX /api/v6/x402/settle → on-chain USDT settlement on X Layer mainnet → HTTP 200 with premium signal data."
+}

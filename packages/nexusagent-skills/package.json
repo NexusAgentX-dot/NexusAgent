@@ -1,0 +1,32 @@
+{
+  "name": "@nexusagent/skills",
+  "version": "0.1.0",
+  "description": "AI agent skills for connecting to NexusAgent — multi-agent commerce on X Layer",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "nexusagent-skills": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "nexusagent",
+    "ai-agent",
+    "x-layer",
+    "okx",
+    "onchain-os",
+    "mcp",
+    "a2a",
+    "x402",
+    "erc-8004",
+    "erc-8183"
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

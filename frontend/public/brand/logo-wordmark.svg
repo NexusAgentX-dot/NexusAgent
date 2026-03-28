@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 200" width="920" height="200">
+  <!-- NexusAgent Logo + Wordmark — Horizontal lockup -->
+
+  <!-- Icon -->
+  <rect x="16" y="16" width="168" height="168" rx="32" fill="#0f1724" stroke="#00e5cc" stroke-width="8"/>
+  <path
+    d="M 60,152 L 60,48 L 78,48 L 140,128 L 140,48 L 156,48 L 156,152 L 138,152 L 76,72 L 76,152 Z"
+    fill="#ffffff"
+  />
+
+  <!-- Wordmark text -->
+  <text x="220" y="132" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-size="72" font-weight="800" fill="#ffffff" letter-spacing="-1">NEXUSAGENT</text>
+</svg>
