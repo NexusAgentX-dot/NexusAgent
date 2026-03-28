@@ -16,6 +16,9 @@ export default function WhyXLayer() {
             <p className="text-sm text-text-secondary leading-relaxed">
               The full loop — signal to decision to payment to settlement — runs inside one ecosystem. Swap any layer out and you lose the closed chain.
             </p>
+            <p className="text-xs text-text-muted mt-3 leading-relaxed">
+              NexusAgent doesn't run <em>on</em> X Layer. It's built <em>for</em> X Layer — OKX wallet, market, payment, and settlement form a single trust boundary that no multi-chain setup can replicate.
+            </p>
           </div>
           <div className="md:w-2/3 grid grid-cols-2 lg:grid-cols-4 gap-3">
             {REASONS.map((r, i) => (

@@ -40,13 +40,12 @@ export default function Hero() {
         </h1>
 
         <p className="text-center text-lg md:text-xl text-text-secondary max-w-3xl mx-auto mb-6 leading-relaxed anim-fade-up anim-d2">
-          NexusAgent makes it easy for third-party AI agents to onboard, get a secure wallet,
-          coordinate through open standards, support x402 payment flows via OKX, and settle outcomes onchain.
+          A governed execution layer where external AI agents register on-chain, access live market signals
+          via OKX Onchain OS, pay per call through x402, and produce explorer-verifiable proof on X Layer mainnet.
         </p>
 
-        <p className="text-center text-sm text-text-tertiary max-w-2xl mx-auto mb-10 anim-fade-up anim-d3">
-          A standards-aligned framework where four specialized agents collaborate,
-          pay, execute, and produce explorer-verifiable proof on X Layer.
+        <p className="text-center text-sm text-text-muted max-w-2xl mx-auto mb-10 font-mono anim-fade-up anim-d3">
+          Signal → Decision → x402 Payment → Execution → Settlement · Every step on-chain · Every outcome verifiable
         </p>
 
         {/* Live Stats Bar */}
@@ -73,11 +72,11 @@ export default function Hero() {
                 <span className="w-px h-3 bg-border" />
               </>
             )}
-            <span className="text-xs font-mono text-text-muted">x402 Settled</span>
+            <span className="text-xs font-mono text-text-muted">x402 · OKX Facilitator</span>
             <span className="w-px h-3 bg-border hidden md:block" />
-            <span className="text-xs font-mono text-text-muted hidden md:block">4 Agents</span>
+            <span className="text-xs font-mono text-text-muted hidden md:block">4 Agents Registered</span>
             <span className="w-px h-3 bg-border hidden md:block" />
-            <span className="text-xs font-mono text-text-muted hidden md:block">Mainnet</span>
+            <span className="text-xs font-mono text-emerald hidden md:block">X Layer Mainnet</span>
           </div>
         </div>
 
@@ -98,27 +97,42 @@ export default function Hero() {
 
         <div className="max-w-4xl mx-auto anim-fade-up anim-d5">
           <div className="rounded-xl border border-border bg-surface/60 backdrop-blur-sm p-6">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-2 h-2 rounded-full bg-cyan animate-pulse-glow" />
-              <span className="text-xs font-mono text-text-tertiary uppercase tracking-wider">
-                Example Workflow Intent
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 rounded-full bg-cyan animate-pulse-glow" />
+                <span className="text-xs font-mono text-text-tertiary uppercase tracking-wider">
+                  Governed Agent Commerce Flow
+                </span>
+              </div>
+              <span className="text-[10px] font-mono text-emerald px-2 py-0.5 rounded border border-emerald/20 bg-emerald/[0.06]">
+                Mainnet Verified
               </span>
             </div>
             <p className="font-mono text-sm text-text-secondary leading-relaxed">
               {HERO_USE_CASE}
             </p>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {['Sentinel', 'Arbiter', 'Executor', 'Evaluator'].map((agent) => (
-                <span
-                  key={agent}
-                  className="px-2.5 py-1 rounded text-xs font-mono border border-border bg-surface-light text-text-tertiary"
-                >
-                  {agent}
+            <div className="mt-4 space-y-2">
+              <div className="flex flex-wrap gap-2">
+                {['Sentinel', 'Arbiter', 'Executor', 'Evaluator'].map((agent) => (
+                  <span
+                    key={agent}
+                    className="px-2.5 py-1 rounded text-xs font-mono border border-border bg-surface-light text-text-tertiary"
+                  >
+                    {agent}
+                  </span>
+                ))}
+              </div>
+              <div className="flex flex-wrap gap-2 pt-1 border-t border-border/40">
+                <span className="px-2.5 py-1 rounded text-xs font-mono border border-cyan/30 bg-cyan/[0.06] text-cyan">
+                  OKX Onchain OS Signal
                 </span>
-              ))}
-              <span className="px-2.5 py-1 rounded text-xs font-mono border border-amber/30 bg-amber/[0.06] text-amber">
-                Settlement Proof
-              </span>
+                <span className="px-2.5 py-1 rounded text-xs font-mono border border-violet-400/30 bg-violet-400/[0.06] text-violet-400">
+                  x402 · OKX Facilitator
+                </span>
+                <span className="px-2.5 py-1 rounded text-xs font-mono border border-amber/30 bg-amber/[0.06] text-amber">
+                  Settlement Proof · OKLink ✓
+                </span>
+              </div>
             </div>
           </div>
         </div>

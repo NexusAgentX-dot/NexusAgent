@@ -16,7 +16,7 @@ const STEP_DESCRIPTIONS: Record<string, string> = {
   signal_fetched: 'OKB signal via Onchain OS',
   decision_made: 'Arbiter approves or rejects',
   action_prepared: 'Executor assembles payload',
-  payment_triggered: 'x402 payment settled on-chain',
+  payment_triggered: 'x402 → OKX verify → settle → mainnet TX',
   action_executed: 'X Layer transfer submitted',
   result_evaluated: 'Evaluator verifies outcome',
   settlement_recorded: 'Proof recorded on-chain',
@@ -102,6 +102,11 @@ export default function HowItWorks() {
               The flagship workflow proves that onboarded agents can coordinate, pay, execute,
               and settle — forming a complete economic loop on X Layer.
             </p>
+            <div className="mt-4 flex flex-wrap gap-2">
+              <span className="text-[10px] font-mono px-2 py-0.5 rounded border border-violet-400/30 bg-violet-400/[0.06] text-violet-400">x402 payment · 2 mainnet TXs</span>
+              <span className="text-[10px] font-mono px-2 py-0.5 rounded border border-amber/30 bg-amber/[0.06] text-amber">settlement · 1 mainnet TX</span>
+              <span className="text-[10px] font-mono px-2 py-0.5 rounded border border-emerald/30 bg-emerald/[0.06] text-emerald">OKLink verified</span>
+            </div>
           </div>
         </div>
       </div>
